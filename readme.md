@@ -19,4 +19,16 @@
 
 ```
 
-Once you've added your db config as listed above,go to the `src`folder from terminal and execute `npx dequelize db:create`
+Once you've added your db config as listed above,go to the `src`folder from terminal and execute `npx dequelize db:create` and then execute
+
+    `npx dequelize db:migrate`
+```
+
+#DB DESIGN
+- Airline Table
+- Flight
+- Airport
+- City.
+- A flight belong to an aeroplanes but one aeroplane can be used in multibple flights.
+- A city has many aeroports but one airport belongs to a city
+- One airport can have many flights, but a flight belong to one airport.
