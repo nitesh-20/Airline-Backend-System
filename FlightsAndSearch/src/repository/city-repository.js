@@ -6,9 +6,9 @@ class CityRepository{
             const city = await City.create({name});
             return city;
         }
-        catch(err){
+        catch(error){
             console.error("Error creating city:",err);
-            throw {err};
+            throw {error};
         }
     }
     async deleteCity(cityId){
@@ -35,7 +35,7 @@ class CityRepository{
                 return city;
             }
             catch(error){
-                console.error("Something went wrong:",error);
+                console.error("Something went wrong at repository layer",error);
                 throw {error};
             }
         }
@@ -46,7 +46,7 @@ class CityRepository{
             return city;
         } 
         catch(error){
-            console.error("Something went wrong",error);
+            console.error("Something went wrong at repository layer",error);
             throw {error};
         }
     }
