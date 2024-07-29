@@ -78,7 +78,8 @@ const get = async (req, res) => {
 }
 
 /**
- * PATCH -> /city/:id -> req.body
+ * url -> -> /city/:id
+ * PATCH -> req.body
  */
 const update = async (req, res) => {
     try {
