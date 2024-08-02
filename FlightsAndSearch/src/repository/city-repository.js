@@ -57,7 +57,7 @@ class CityRepository {
     }
     async getCity(cityID) {
         try {
-            const city = await City.findByPK(cityID);
+            const city = await City.findByPk(cityID);
             return city;
         }
         catch (error) {
@@ -85,6 +85,26 @@ class CityRepository {
         catch (error) {
             console.error("Something went wrong at repository layer", error);
         throw {error};
+        }
+    }
+
+    async getAllCities(filter){
+        try {
+            if(filter.name){
+                const cities = await City.findAll({
+                    where:{
+                        name:{
+                            [Op.startsWith]:filter.name
+                        }
+                    }
+                })
+                return cities;
+            }
+            const cities = await City.findAll();
+            return cities;
+        } catch (error){
+            console.error("Something went wrong at repository layer", error);
+            throw {error};
         }
     }
 
