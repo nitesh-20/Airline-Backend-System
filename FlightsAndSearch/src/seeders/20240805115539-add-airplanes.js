@@ -18,37 +18,37 @@ module.exports = {
       modelNumber:'Airbus A330',
       capacity:330,
       createdAt: new Date(),
-      updateAt: new Date()
+      updatedAt: new Date()
      },
      {
       modelNumber:'Boeing 747',
       capacity:220,
       createdAt: new Date(),
-      updateAt: new Date()
+      updatedAt: new Date()
      },
      {
       modelNumber:'Boeing 777',
       capacity:380,
       createdAt: new Date(),
-      updateAt: new Date()
+      updatedAt: new Date()
      },
      {
       modelNumber:'Vistara',
       capacity:200,
       createdAt: new Date(),
-      updateAt: new Date()
+      updatedAt: new Date()
      },
      {
       modelNumber:'Indigo',
       capacity:300,
       createdAt: new Date(),
-      updateAt: new Date()
+      updatedAt: new Date()
      },
      {
       modelNumber:'Airbus A320',
       capacity:200,
       createdAt: new Date(),
-      updateAt: new Date()
+      updatedAt: new Date()
      },
     ], {});
   },
